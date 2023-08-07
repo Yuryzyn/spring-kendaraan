@@ -1,0 +1,11 @@
+com\matchamang\yuridan\entity\KendaraanLogEntity.class
+com\matchamang\yuridan\repository\KendaraanRepository.class
+com\matchamang\yuridan\entity\StatusKetersediaanEntity.class
+com\matchamang\yuridan\entity\KendaraanEntity.class
+com\matchamang\yuridan\service\KendaraanService.class
+com\matchamang\yuridan\DTO\KendaraanDTO.class
+com\matchamang\yuridan\repository\KendaraanLogRepository.class
+com\matchamang\yuridan\repository\StatusKetersediaanRepository.class
+com\matchamang\yuridan\YuridanApplication.class
+com\matchamang\yuridan\controller\KendaraanController.class
+com\matchamang\yuridan\service\implement\KendaraanServiceImpl.class
