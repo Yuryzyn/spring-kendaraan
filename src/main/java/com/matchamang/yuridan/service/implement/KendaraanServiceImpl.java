@@ -14,10 +14,7 @@ import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class KendaraanServiceImpl implements KendaraanService {
@@ -71,6 +68,7 @@ public class KendaraanServiceImpl implements KendaraanService {
             kendaraanDTOList.add(kendaraanDTO);
         }
 
+        Collections.sort(kendaraanDTOList, Comparator.comparingLong(KendaraanDTO::getIdKendaraan));
         return kendaraanDTOList;
     }
 
@@ -99,6 +97,7 @@ public class KendaraanServiceImpl implements KendaraanService {
             }
         }
 
+        Collections.sort(kendaraanDTOList, Comparator.comparingLong(KendaraanDTO::getIdKendaraan));
         return kendaraanDTOList;
     }
 
